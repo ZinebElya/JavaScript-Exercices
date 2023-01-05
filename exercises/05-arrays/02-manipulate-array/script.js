@@ -24,4 +24,20 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        function manipArray() {
+            fruits.shift();
+            fruits.pop();
+            fruits.unshift("banane");
+            fruits.push("kiwi");
+          
+          }
+
+          manipArray()
+
+          console.log(fruits)
+        
+        });
 })();
