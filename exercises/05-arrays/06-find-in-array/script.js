@@ -89,4 +89,15 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        people.forEach((person, index) => { 
+            if (person.firstname == "Jean" && person.lastname == "Dupont") {
+                console.log(person.email + "\n" + "Index: " + index);
+            }
+        });
+
+    }); 
+
 })();

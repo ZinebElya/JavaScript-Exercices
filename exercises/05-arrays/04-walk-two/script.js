@@ -26,4 +26,33 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        function myFunction(item) {
+            console.log(item)
+        }
+
+        fruits.forEach(myFunction)
+          
+          }); 
+
+/* 2eme code 
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        let text = ""
+
+        function myFunction(item, index) {
+            console.log(text = index + ":" +item)
+        }
+
+        fruits.forEach(myFunction)
+      
+    });
+*/
+
 })();
+
+
+
