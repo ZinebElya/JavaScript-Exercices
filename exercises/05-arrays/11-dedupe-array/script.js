@@ -28,4 +28,23 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        var uniqueArr = [...new Set(fruits)]
+
+        console.log(uniqueArr)
+
+
+    // 2eme possibilité
+    
+    /*
+    const filteredArray = fruits.filter(function(ele , pos){
+        return fruits.indexOf(ele) == pos;
+    }) 
+    
+    console.log("The filtered array ",filteredArray);
+    */
+
+    }); 
 })();
