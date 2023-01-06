@@ -89,4 +89,12 @@
     ];
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        const totalAge = people.reduce (function (total, person) {return total + person.age ;}, 0);
+
+        console.log(totalAge); 
+
+    }); 
 })();

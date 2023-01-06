@@ -39,4 +39,23 @@
     ]);
 
     // your code here
+
+    document.getElementById("run").addEventListener("click", () => {
+
+        let randomBirds = birds[Math.floor(Math.random()*birds.length)];
+        console.log(randomBirds.name);
+
+        let randomAdj = [...adjectives][Math.floor(Math.random() * [...adjectives].length)];
+        console.log(randomAdj);
+
+        let article = "Le";
+        if (randomBirds.fem){
+            article = "La";
+        }
+
+        document.getElementById("target").innerHTML = `${article} ${randomBirds.name} ${randomAdj}`;
+
+
+    
+    }); 
 })();
