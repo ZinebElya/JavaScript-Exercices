@@ -11,7 +11,7 @@
 
 (() => {
     // your code here
-/*
+
     document.getElementById("run").addEventListener("click", () =>{
 
         let pass1 = document.getElementById("pass-one");
@@ -26,7 +26,6 @@
             alert("Les mots de passe ne sont pas identiques!");
             
         }
-
-
-    })();*/
+        
+    })();
 })();
