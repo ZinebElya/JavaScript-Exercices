@@ -11,4 +11,15 @@
 
 (() => {
     // your code here
+    
+    document.getElementsByClassName("target")[0].innerHTML = "owned";
+
+    //2eme manière
+    
+   // document.querySelector(".target").innerHTML = "owned"; 
+
+    //3eme manière
+
+  // document.querySelector(".target").textContent = "owned";
+
 })();
