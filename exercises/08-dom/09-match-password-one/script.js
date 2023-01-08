@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    // your code he
 
     document.getElementById("run").addEventListener("click", () =>{
 
