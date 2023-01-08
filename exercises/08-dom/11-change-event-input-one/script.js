@@ -11,4 +11,22 @@
 
 (() => {
     // your code here
+
+    let inputPass = document.getElementById("pass-one");
+    let counter = document.getElementById("counter");
+
+    inputPass.addEventListener("input",() => {
+
+        counter.innerHTML = inputPass.value.length + "/10";
+
+
+      if (inputPass.value.length >= 10) {
+        this.onkeypress = function () {
+            return false;
+        };
+        
+      }
+
+    });
+
 })();

@@ -10,6 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    // your code he
 
+    document.getElementById("run").addEventListener("click", () =>{
+
+        let pass1 = document.getElementById("pass-one");
+        let pass2 = document.getElementById("pass-two");
+       
+
+        if (pass1.value === pass2.value) {
+            alert("Mot de passe accepté");
+        } else {
+            pass1.style.borderColor = "red";
+            pass2.style.borderColor = "red";
+            alert("Les mots de passe ne sont pas identiques!");
+            
+        }
+        
+    })();
 })();

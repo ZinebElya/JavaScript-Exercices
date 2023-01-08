@@ -12,6 +12,8 @@
 (() => {
     // your code here
 
+    let target = document.getElementById("target")
+
     let table = document.createElement("table");
     let tbody = document.createElement ("tbody");
     table.appendChild(tbody);
@@ -30,6 +32,6 @@
         }
     }
 
-    document.getElementById("target").appendChild(table);  
+    target.appendChild(table);  
 
 })();
