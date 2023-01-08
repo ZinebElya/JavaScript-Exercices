@@ -19,4 +19,18 @@
     ];
 
     // your code here
+    let i = 0;
+
+    document.getElementById("next").addEventListener("click", () =>{
+
+        let img = document.querySelector("img");    // rechercher l'image
+       
+        img.src = gallery[i];       //modifier la source de l'image pour afficher l'image suivante.
+        i++;
+        if (i >= gallery.length) {
+            i= 0;
+        }     //  réinitialise à 0 pour recommencer le carrousel
+
+    });
+
 })();

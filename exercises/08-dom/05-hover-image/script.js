@@ -11,4 +11,22 @@
 
 (() => {
     // your code here
+
+    let img = document.querySelector("img");
+
+    let urlDataHover = img.getAttribute("data-hover");  // Récupèrer la valeur de l'attribut "data-hover"
+
+    img.addEventListener("mouseover", ()=> {
+        img.src = urlDataHover;
+
+    })   //Créer l'évenement mouseover
+
+    let srcOriginal = img.getAttribute("src");
+
+    img.addEventListener("mouseout", () => {
+        img.src = srcOriginal; 
+    })  //Créer l'évenement mouseout, pour remettre l'image à son état original
+
+
+    
 })();

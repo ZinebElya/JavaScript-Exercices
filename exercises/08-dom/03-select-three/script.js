@@ -11,4 +11,8 @@
 
 (() => {
     // your code here
+    
+    document.querySelectorAll("p.target").forEach(function (item){
+        item.textContent= "owned";
+    });
 })();

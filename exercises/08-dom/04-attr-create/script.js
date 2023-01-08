@@ -11,4 +11,15 @@
 
 (() => {
     // your code here
+
+    let source = document.getElementById("source");
+    let urlImage = source.getAttribute("data-image");   //Récupèrer la valeur de l'attribut "data-image"
+    let img = document.createElement("img");            // Créer une balise image
+    img.src = urlImage ;                                // afficher la valeur récupèré
+
+    let target = document.getElementById("target");
+    target.appendChild(img);                            //Mettre la nouvelle balise image dans la balise d'id "target"
+ 
+    source.remove();                                    //supprimer la balise source
+
 })();
