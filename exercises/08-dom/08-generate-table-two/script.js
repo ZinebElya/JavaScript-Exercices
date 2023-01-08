@@ -11,4 +11,25 @@
 
 (() => {
     // your code here
+
+    let table = document.createElement("table");
+    let tbody = document.createElement ("tbody");
+    table.appendChild(tbody);
+
+    let tr = document.createElement("tr");
+    let td = document.createElement("td");
+
+    for (let x = 1; x <= 10; x++) {
+        tr = document.createElement("tr");
+        tbody.appendChild (tr);
+
+        for (let y = 1; y <= 10; y++) {
+            td = document.createElement("td");
+            tr.appendChild (td);
+            td.innerHTML= x * y;  
+        }
+    }
+
+    document.getElementById("target").appendChild(table);  
+
 })();
