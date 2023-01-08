@@ -11,4 +11,18 @@
 
 (() => {
     // your code here
+
+    let inputPass = document.getElementById("pass-one");
+    let validity = document.getElementById("validity");
+
+    inputPass.addEventListener("input",() => {
+
+        let nombreCaractere = value.length >= 8;
+        let nombreChiffre = /\d/.test(value) && /\d/.test(value.replace(/\d/, ''));
+
+        if (nombreCaractere && nombreChiffre) {
+            alert("ok");
+        }
+    });
+
 })();
