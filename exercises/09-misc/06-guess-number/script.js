@@ -11,4 +11,22 @@
 
 (() => {
     // your code here
+
+    let nbRandom = Math.floor(Math.random() * 100) + 1;
+    let nbEssais = 0; // compteur d'essais
+
+    function guess() {
+        nbEssais++;
+        const nbSaisi = prompt("Entrez un nombre entre 1 et 100 :");
+        if (nbSaisi == nbRandom) {
+            alert("Félicitation, vous avez trouvé le nombre en ${nbEssais} essai(s) !");
+        } else if (nbSaisi > nbRandom) {
+            alert("Le nombre à trouver est plus petit.");
+        } else {
+            alert("Le nombre à trouver est plus grand.");
+        }
+}
+
+    window.onload = guess; // appelle la fonction guess() au chargement de la page
+
 })();
