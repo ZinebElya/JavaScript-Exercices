@@ -11,7 +11,6 @@
 
 (() => {
     // your code here
-    
     const target = document.getElementById("target");
     let input = document.querySelector("#hero-id");
 
@@ -32,6 +31,7 @@
             clon.querySelector(".powers").innerHTML = showHero.abilities;
 
             target.appendChild(clon);
+            
         });
     });
 })();   

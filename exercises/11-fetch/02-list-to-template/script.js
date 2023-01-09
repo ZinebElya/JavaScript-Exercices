@@ -11,7 +11,6 @@
 
 (() => {
     // your code here
-
     document.getElementById("run").addEventListener("click", async() => {
         let response = await fetch("http://localhost:3000/heroes");
         let heroes = await response.json();
@@ -25,12 +24,9 @@
             clon.querySelector(".alter-ego").innerHTML = showHero.alterEgo;
             clon.querySelector(".powers").innerHTML = showHero.abilities;
    
-            target.appendChild(clon);
-            
+            target.appendChild(clon);   
         });
-
     });
-
 })();
 
 

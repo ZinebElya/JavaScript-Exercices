@@ -11,13 +11,13 @@
 
 (() => {
     // your code here
-
     document.getElementById("run").addEventListener("click", async() => {
         let response = await fetch("http://localhost:3000/heroes");
         let heroes = await response.json();
 
         console.log(heroes);
         console.table(heroes);
+        
     });
 })();
 
