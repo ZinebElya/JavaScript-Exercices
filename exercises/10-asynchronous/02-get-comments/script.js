@@ -11,4 +11,24 @@
 
 (() => {
     // your code here
+
+    document.querySelector("#run").addEventListener("click", () => {
+       
+        window.lib.getPosts((error, posts) => {
+            if (error) {
+              console.error(error);
+            } else {
+              posts.forEach((el) => {
+                window.lib.getComments(el.id, (err, comments) => {
+                  if (error) {
+                    console.error(error);
+                  } else {
+                    el.comments = comments;
+                  }
+                });
+              });
+              console.log(posts);
+            }
+          });
+    });
 })();
