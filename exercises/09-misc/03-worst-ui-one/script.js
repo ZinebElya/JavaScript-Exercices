@@ -11,4 +11,16 @@
 
 (() => {
     // your code here
+
+    const target = document.getElementById("target");
+
+    /*Lorsque l'utilisateur modifie la valeur du curseur du "slider", 
+    l'événement "input" est déclenché et la fonction est exécutée.*/
+
+    document.getElementById("slider").addEventListener("input", event => {
+        target.innerText = `+${event.currentTarget.value}`;             //currentTarget renvoie l'élément dont event listeners ont déclenché l'événement.
+    });
+
+    /*Cette fonction utilise la propriété "innerText" de l'élément targrt pour mettre à jour son contenu 
+    avec la valeur actuelle du "slider", préfixée par un "+".*/
 })();
