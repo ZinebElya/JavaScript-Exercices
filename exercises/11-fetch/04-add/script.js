@@ -42,8 +42,8 @@
         headers: { "Content-Type": "application/json" } //Les en-têtes de la requête sont définis pour indiquer que le corps de la requête est en format JSON 
         })
         .then(response => response.json())           // Le premier then utilise la méthode json pour convertir la réponse en un objet JavaScript
-        .then(data => {                                 //Le second then utilise une fonction de callback pour afficher un message dans la console,
-            console.log("Nouveau héro créé: ", data);   //indiquant que le nouveau héro a été créé avec les informations reçues en retour.
+        .then(newHero => {                                 //Le second then utilise une fonction de callback pour afficher un message dans la console,
+            console.log("Nouveau héro créé: ", newHero);   //indiquant que le nouveau héro a été créé avec les informations reçues en retour.
         })
         .catch(error => {                                   ////La méthode catch est utilisée pour gérer les erreurs de la requête.
             console.error("Erreur lors de la création du héro: ", error); //console.error indiquant qu'une erreur s'est produite lors de la création du héro.

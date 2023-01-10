@@ -10,32 +10,12 @@
       ]
     },
     {
-      "id": 2,
-      "name": "Marvel Girl",
-      "alterEgo": "Jean Grey",
-      "abilities": [
-        "Telekinesis",
-        "Telepathy",
-        "Astral projection"
-      ]
-    },
-    {
       "id": 3,
       "name": "Beast",
       "alterEgo": "Hank McCoy",
       "abilities": [
         "Genius-level intellect",
         "Animal-like physiology with enhanced physical attributes and sharp claws and teeth"
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Angel",
-      "alterEgo": "Warren Worthington III",
-      "abilities": [
-        "Flight via feathered wings and hollow bones",
-        "Aerial adaptation",
-        "Enhanced physical prowess"
       ]
     },
     {
@@ -69,6 +49,14 @@
         "1254, 5154, 515"
       ],
       "id": 9
+    },
+    {
+      "name": "FireGirl",
+      "alterEgo": "Madame tt le monde ",
+      "abilities": [
+        "p1, p2, p3, p4"
+      ],
+      "id": 10
     }
   ]
 }
