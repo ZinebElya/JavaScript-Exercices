@@ -11,4 +11,28 @@
 
 (() => {
     // your code here
+
+    let input = document.querySelector("#hero-id");
+
+    document.getElementById("run").addEventListener("click", () => {
+       
+        let id = input.value ;
+
+        if (isNaN(id)) {
+            alert("Invalide id!")
+            return;
+        }
+
+        fetch('http://localhost:3000/heroes/'+id,{
+            method: "DELETE",
+            headers: { "Content-Type": "application/json" }
+        })
+        .then(response => response.json())
+        .then(deleteHero => {
+            console.log("Héro supprimé: ", deleteHero);
+        })
+        .catch(error => {                                  
+            console.error("Héro inconnu: ", error); 
+        });
+    });
 })();
